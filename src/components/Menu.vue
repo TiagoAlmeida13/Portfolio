@@ -52,17 +52,15 @@ button {
 }
 button.btn-menu {
   font-weight: 600;
-  color: #382b22;
+  color: #fff;
   text-transform: uppercase;
   padding: 1.25em 2em;
-  background: #c9abf7;
-  border: 2px solid #785aa6;
+  background: transparent;
+  border: 2px solid transparent;
   border-radius: 0.75em;
-  transform-style: preserve-3d;
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
-    background 150ms cubic-bezier(0, 0, 0.58, 1);
-}
-button.btn-menu::before {
+} 
+
+button.btn-menu::before{
   position: absolute;
   content: "";
   width: 100%;
@@ -71,27 +69,29 @@ button.btn-menu::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #b280ff;
+  background: transparent;
   border-radius: inherit;
-  box-shadow: 0 0 0 2px #785aa6, 0 0.625em 0 0 #2f1e47;
+  box-shadow: 0 0 0 2px transparent, 0 0.625em 0 0 transparent;
   transform: translate3d(0, 0.75em, -1em);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), 
     box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
 }
-button.btn-menu:hover {
-  background: #c9abf7;
+
+button.btn-menu:hover{
+  background: transparent;
   transform: translate(0, 0.25em);
+  
 }
-button.btn-menu:hover::before {
-  box-shadow: 0 0 0 2px #785aa6, 0 0.5em 0 0 #2f1e47;
+button.btn-menu:hover::before{
+  box-shadow: 0 0 0 2px transparent, 0 0.5em 0 0 transparent;
   transform: translate3d(0, 0.5em, -1em);
 }
-button.btn-menu:active {
-  background: #c9abf7;
+button.btn-menu:active{
+  background: transparent;
   transform: translate(0em, 0.75em);
 }
-button.btn-menu:active::before {
-  box-shadow: 0 0 0 2px #785aa6, 0 0 #2f1e47;
+button.btn-menu:active::before{
+  box-shadow: 0 0 0 2px transparent, 0 0 transparent;
   transform: translate3d(0, 0, -1em);
 }
 </style>

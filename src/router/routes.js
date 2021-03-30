@@ -1,13 +1,21 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Router from 'vue-router'
+import MainBody from '@/views/MainBody'
 import About from '@/views/About'
 
-Vue.use(VueRouter)
+Vue.use(Router)
 
-const routes = new VueRouter [
-    {
-        path: '/about',
-        name: 'Sobre',
-        component: About
-    }
-]
+export default new Router({
+    routes: [
+        {
+            path: '/',
+            name: 'Home',
+            component: MainBody
+        },
+        {
+            path: '/about',
+            name: 'Sobre',
+            component: About
+        }
+    ]
+})

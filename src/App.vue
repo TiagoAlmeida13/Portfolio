@@ -5,7 +5,6 @@
     <div class="clouds"></div>
     <div id="app">    
     <Menu/>
-    <MainBody/>
     <router-view/>
   </div>
   </div>
@@ -13,12 +12,10 @@
 
 <script>
 import Menu from './components/Menu.vue'
-import MainBody from './components/MainBody.vue'
 export default {
   name: 'App',
   components: {
     Menu,
-    MainBody
   }
 }
 </script>
@@ -29,7 +26,6 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: rgb(18, 3, 43);
 }
 
 #app {
@@ -46,15 +42,7 @@ export default {
     height: 400px;
     left: 30%;
     background: transparent;
-}
-
-.title-card img.perfil{
-  position: absolute;
-  height: 25rem;
-  background: transparent;
-  left: 57%;
-  z-index: 4;
-  border-radius: 50%;
+    -webkit-user-drag: none;
 }
 
 * {

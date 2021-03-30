@@ -2,17 +2,12 @@
   <div class="menu">
     <div class="dashboard">
       <div class="btn-estilo">
-        <button href="#" class="btn-menu">Ínicio</button>
+        <router-link to="/about"><button href="#" class="btn-menu">Sobre</button></router-link>        
       </div>
       <div class="btn-estilo">
-        <button href="#" class="btn-menu">Sobre</button>
-      </div>
-      <div class="btn-estilo">
-        <button href="#" class="btn-menu">Portfólio</button>
-      </div>
-      <div class="btn-estilo">
-        <button href="#" class="btn-menu">Blog</button>
-      </div>
+        <router-link to="/"><button href="#" class="btn-menu">Portfólio</button></router-link>
+        
+      </div>>
     </div>
   </div>
 </template>
@@ -23,7 +18,7 @@ export default {
 }
 </script>
 
-<style>
+<style >
 *::before,
 *::after {
   box-sizing: border-box;
@@ -33,7 +28,7 @@ export default {
   height: 75px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 

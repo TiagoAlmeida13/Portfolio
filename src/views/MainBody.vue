@@ -11,4 +11,13 @@
 .title-card img{
   z-index: 5;
 }
+
+.title-card img.logo{
+    z-index: 10;
+    position: absolute;
+    height: 480px;
+    left: 20%;
+    background: transparent;
+    -webkit-user-drag: none;
+}
 </style>

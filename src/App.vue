@@ -36,15 +36,6 @@ export default {
   margin-top: 60px;
 }
 
-.title-card img.logo{
-    z-index: 10;
-    position: absolute;
-    height: 400px;
-    left: 30%;
-    background: transparent;
-    -webkit-user-drag: none;
-}
-
 * {
     margin: 0;
     padding: 0;

@@ -2,11 +2,13 @@
   <div class="menu">
     <div class="dashboard">
       <div class="btn-estilo">
-        <router-link to="/about"><button href="#" class="btn-menu">Sobre</button></router-link>        
+        <router-link to="/about"><button class="btn-menu">Sobre</button></router-link>        
       </div>
       <div class="btn-estilo">
-        <router-link to="/"><button href="#" class="btn-menu">Portfólio</button></router-link>
-        
+        <router-link to="/"><button class="btn-menu"><i class="fal fa-home"></i></button></router-link>
+      </div>
+      <div class="btn-estilo">
+        <router-link to="/portfolio"><button class="btn-menu">Portfólio</button></router-link>
       </div>>
     </div>
   </div>

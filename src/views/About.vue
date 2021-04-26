@@ -58,6 +58,7 @@ export default {
 }
 .social-media img{
   width: 5rem;
+  -webkit-user-drag: none;
 }
 
 </style>
